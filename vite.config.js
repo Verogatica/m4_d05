@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/m4_d01",
+  base: "/m4_d02",
   plugins: [react()],
 })
