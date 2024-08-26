@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -27,10 +26,6 @@ const Register = () => {
         alert('Usuario creado con éxito');
 
     }
-    
-
-
-
   return (
     <div>
       <form className="col-md-7 mx-auto my-5">
