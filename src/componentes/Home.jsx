@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch('http://localhost:5001/api/pizzas')
+      const res = await fetch('http://localhost:5001/api/pizzas') // mi computador tenia usado el puerto 5000 y no me dejaba matar el proceso asique use el 5001
       const data = await res.json();
       setPizzas(data);
       console.log (data)
