@@ -1,30 +1,30 @@
 import React from 'react';
 
 const CardPizza = ({ nombre, precio, stock, disponibilidad, img, ingredientes }) => {
-  const ingredientesArray = ingredientes.split(', ');
+const ingredientesList = ingredientes.split(', ');
 
   return (
     <div>
       <article className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 my-4 w-100 p-3">
-        <div className="card">
-          <img src={img} className="card-img-top" alt="Pizza"/>
+        <div className="card ">
+          <img src={img} className="card-img-top w-100 object-fit-cover imgpizza" alt="Pizza"/>
           <div className="card-body">
             <h4 className="card-title fw-light mb-3 fw-bold">
               Pizza {nombre}
             </h4>
             <hr className="p-0"/>
-            <p className="card-text h6 fw-light text-center">Ingredientes:</p>
-            <ul className="fw-light text-center">
-              {ingredientesArray.map((ingrediente, index) => (
+            <p className="card-text h6 fw-light text-start ">Ingredientes:</p>
+            <ul className="fw-light text-center object-fit-cover">
+              {ingredientesList.map((ingrediente, index) => (
                 <li key={index}>{ingrediente}</li>
               ))}
             </ul>
             <hr />
             <ul className="list-group list-group-flush">
-              <li className="list-group-item fw-light gris py-0 text-center fw-bold fs-5">
+              <li className="list-group-item fw-light gris py-0 text-start fw-bold fs-5">
                 Precio: ${precio}
               </li>
-              <li className="list-group-item fw-light gris py-0 text-center">
+              <li className="list-group-item fw-light gris py-0 text-start">
                 Stock: {stock}
               </li>
               <li className="list-group-item fw-light gris py-0 text-center">
