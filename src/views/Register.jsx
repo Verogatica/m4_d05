@@ -29,7 +29,7 @@ const Register = () => {
   return (
     <div>
       <form className="col-md-7 mx-auto my-5">
-        <h1>Login</h1>
+        <h1>Register</h1>
         <div className="mb-3">
           <label className="form-label">Email</label>
           <input type="email" className="form-control" placeholder="Ingresa tu correo electrónico" onChange={(event) => setEmail(event.target.value)} />

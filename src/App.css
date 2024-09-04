@@ -16,6 +16,20 @@ body {display: block !important;}
     background-position: center;
 }
 
+.icon-circle {
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 70px; 
+  height: 70px; 
+  border: 2px solid #CDEAFF; 
+  background-color: #CDEAFF; 
+  border-radius: 50%; 
+  font-size: 48px;
+  color: #103855; 
+}
+
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import CardPizza from './CardPizza';
-import Pizzas from './Pizzas';
+import Pizzas from '../componentes/Pizzas';
 //import { productos } from '../assets/data/pizzas.js';
 
 const Home = () => {
